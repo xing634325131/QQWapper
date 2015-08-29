@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sliding="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qq_com_bg_pic">
+
+    <com.gugutian.qqwapper.widget.SlidingMenu
+        android:id="@+id/main_sm"
+        android:layout_width="match_parent"
+        sliding:rightPadding="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/menu_main"/>
+
+            <LinearLayout
+                android:id="@+id/main_content_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/main_content_fragment"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.gugutian.qqwapper.widget.SlidingMenu>
+
+</LinearLayout>
